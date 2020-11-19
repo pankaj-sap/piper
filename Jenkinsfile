@@ -4,9 +4,9 @@ node() {
         checkout scm
         setupCommonPipelineEnvironment script:this
     }
-    sudo chmod 666 /var/run/docker.sock
-    
+dir('/Users/pankaj'){    
         stage('build') {
     mtaBuild script: this
+        }
 }
 }
