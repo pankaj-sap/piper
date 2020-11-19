@@ -1,5 +1,5 @@
 library('piper-lib-os')
-node{
+node(){
 stage('build') {
     mtaBuild script: this
 }
