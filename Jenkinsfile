@@ -1,10 +1,10 @@
 library('piper-lib-os')
 node(){
-        bat "set"
+        sh "set"
     withMaven {
         git changelog: false, poll: false, url: 'https://github.com/jtnord/maven-test-project.git'
         
-        bat "mvn package"
+        sh "mvn package"
     }
 
 stage('build') {
