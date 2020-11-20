@@ -4,7 +4,7 @@ node() {
         checkout scm
         setupCommonPipelineEnvironment script:this
     }
-dir('../'){    
+dir('../users/pankaj'){    
         stage('build') {
     mtaBuild script: this
         }
