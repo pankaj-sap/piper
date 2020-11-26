@@ -3,6 +3,7 @@
 node() {
     stage('prepare') {
                     echo 'Pankaj'
+        User.current().getId()
         
         def specificCause = currentBuild.getBuildCauses('hudson.model.Cause$UserIdCause')
 if (specificCause) {
