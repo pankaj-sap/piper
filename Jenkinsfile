@@ -15,7 +15,7 @@ if (specificCause) {
 }
         
             
-        echo $BUILD_USER
+        
 
         checkout scm
         setupCommonPipelineEnvironment script:this
