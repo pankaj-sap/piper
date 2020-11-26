@@ -3,8 +3,7 @@
 node() {
     stage('prepare') {
                     echo 'Pankaj'
-        echo $JENKINS_STARTED_BY
-echo $USER
+        
         
         def specificCause = currentBuild.getBuildCauses('hudson.model.Cause$UserIdCause')
 if (specificCause) {
