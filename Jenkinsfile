@@ -3,7 +3,7 @@ node() {
     stage('prepare') {
                     echo 'Pankaj'
             
-        echo env.BUILD_USER_ID
+        echo "${BUILD_USER}"
 
         checkout scm
         setupCommonPipelineEnvironment script:this
