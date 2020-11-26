@@ -6,6 +6,7 @@ node() {
     }
    
         stage('build') {
+            echo env.BUILD_USER_ID
     mtaBuild script: this
         }
 
